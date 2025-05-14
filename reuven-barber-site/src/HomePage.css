@@ -484,12 +484,12 @@ html {
         position: absolute;
         background-color: black;
         top: 4vh; /* היה 80px */
-        min-width: 8vw; /* היה 120px */
+        min-width: 5vw; /* היה 120px */
         z-index: 9999;
         border: 0.3vw solid #ddd;
         border-radius: 0.5vw;
         text-align: center;
-        left: 78vw; /* היה 505px */
+        left: 75vw; /* היה 505px */
         padding: 0.8vw;
         box-shadow: 0px 0.2vw 0.8vw rgba(0, 0, 0, 0.15);
     }
