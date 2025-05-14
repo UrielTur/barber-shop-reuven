@@ -966,6 +966,7 @@ html {
     }
 
     .contact {
+        top: 3.6vh; /* הוסף שורה זו */
         /*display: none;*/
         border: none;
         position: fixed; /* או absolute אם זה בתוך קונטיינר */
@@ -975,6 +976,8 @@ html {
     }
 
     .products {
+        top: 3.6vh; /* הוסף שורה זו */
+
         border: none;
         position: fixed;
         white-space: nowrap;
