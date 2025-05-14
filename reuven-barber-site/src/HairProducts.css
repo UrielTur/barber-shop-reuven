@@ -1,0 +1,484 @@
+html {
+    overflow-x: hidden;
+}
+
+
+.panel {
+    display: flex; /* ← חשוב */
+    position: fixed;
+    background-color: black;
+    width: 100%;
+    height: 120px;
+    z-index: 9998;
+    flex-direction: row;
+    align-items: center; /* ליישור אנכי */
+    /*align-items: center; !* ליישור אנכי *!*/
+    justify-content: space-between; /* ← אופציונלי, לתיאום מרחקים */
+    padding: 0 2vw; /* ← אופציונלי, רווח מהקצוות */
+    direction: rtl;
+
+
+}
+
+.logo {
+    background-image: url("Images/logo-barber.png");
+    position: fixed;
+    background-size: contain;
+    background-repeat: no-repeat;
+    left: 88vw;
+    top: 1vh;
+    width: 20vw; /* במקום 130px */
+    height: 15vh;
+    cursor: pointer;
+
+
+}
+
+.gallery {
+    background-color: black;
+    border: none;
+    color: white;
+    position: relative;
+    left: 3vw; /* היה 550px */
+    margin-right: 5vw;
+    width: 5vw; /* היה 50px */
+    /*height: 0vh;*/
+    cursor: pointer;
+
+}
+
+.gallery:hover {
+    color: lightgray;
+}
+
+
+.contact {
+    background-color: black;
+    border: none;
+    color: white;
+    position: relative;
+    left: 25vw; /* היה 250px */
+    /*margin-top: 4vh;*/
+    margin-right: 5vw;
+    width: 10vw; /* היה 100px */
+    /*height: 5vh;*/
+    cursor: pointer;
+    white-space: nowrap;
+
+
+}
+
+.contact:hover {
+    color: lightgray;
+}
+
+.products {
+    background-color: black;
+    border: none;
+    color: white;
+    position: relative;
+    white-space: nowrap;
+    /*right: 125px;*/
+    /*margin-top: 30px;*/
+    /*margin-right: 50px;*/
+    /*width: 150px;*/
+    /*height: 50px;*/
+
+    left: 45vw; /* היה 125px */
+    /*margin-top: 3vh;*/
+    margin-right: 2vw;
+    /*margin-left: 2vw;*/
+    width: 10vw; /* היה 150px */
+    /*height: 5vh;*/
+    cursor: pointer;
+
+}
+
+.products:hover {
+    color: lightgray;
+}
+
+
+.instagram {
+    background-color: black;
+    border: none;
+    background-image: url("Images/instagramLogo.png");
+    position: fixed;
+    background-size: contain;
+    background-repeat: no-repeat;
+    /*top: 30px;*/
+    /*left: 110px;*/
+    /*width: 75px;*/
+    /*height: 75px;*/
+
+    top: 3.5vh; /* היה 30px */
+    left: 8vw; /* היה 110px */
+    width: 6.5vw; /* היה 75px */
+    height: 5vw;
+    cursor: pointer;
+
+}
+
+.instagram:hover {
+    width: 7vw;
+    /*height: 8vw;*/
+    border-color: white;
+}
+
+.whatsapp {
+    background-color: black;
+    border: none;
+    background-image: url("Images/whatsapp-logo.png");
+    position: fixed;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    top: 3.5vh;
+    left: 2.5vw; /* היה 50px */
+    width: 6vw; /* היה 55px */
+    height: 4.6vw;
+    cursor: pointer;
+
+}
+
+.whatsapp:hover {
+    width: 6.5vw;
+    height: 4.75vw;
+    border-color: white;
+}
+
+
+.gallery-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.gallery-dropdown-menu {
+    position: absolute;
+    background-color: black;
+    top: 8vh; /* היה 80px */
+    min-width: 8vw; /* היה 120px */
+    z-index: 9999;
+    border: 0.3vw solid #ddd;
+    border-radius: 0.5vw;
+    text-align: center;
+    left: 0vw; /* היה 505px */
+    padding: 0.8vw;
+    box-shadow: 0px 0.2vw 0.8vw rgba(0, 0, 0, 0.15);
+}
+
+.gallery-dropdown-menu button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    /*padding: 10px;*/
+    /*width: 100%;*/
+    padding: 1vh;
+    width: 100%;
+    cursor: pointer;
+}
+
+
+.gallery-dropdown-menu button:hover {
+    color: lightgray; /* רק הטקסט יתחלף */
+    cursor: pointer; /* משדר שהחלק הזה ניתן ללחיצה */
+}
+
+
+.products-list {
+    background-color: #eff0f5;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2vw;
+    justify-content: flex-start;
+    padding: 12vh 3vw 3vw;
+}
+
+/*//////////////////////////////////////*/
+
+.fourScreen {
+    background-color: #1e1f22;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 40vh;
+    color: white;
+    padding: 0 10vw;
+    box-sizing: border-box;
+    margin: 2vh 1vw;
+
+    /*top: 10vh;*/
+}
+
+.logo-1 {
+    background-image: url("Images/logo-barber.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 10vw;
+    height: 10vw;
+    min-width: 100px;
+    min-height: 100px;
+}
+
+.text-container {
+    text-align: center;
+    flex: 1;
+    direction: rtl;
+}
+
+#text-1,
+#text-2 {
+    font-size: 1.2vw;
+    color: #cdc4c4;
+    margin: 0.5vw 0;
+}
+
+.logoim {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /*gap: 0.5vh;*/
+    margin-right: 10vw;
+}
+
+#instagram-2 {
+    background-image: url("Images/instagramLogo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 8vw;
+    height: 5vw;
+    cursor: pointer;
+}
+
+#whatsapp-2 {
+    background-image: url("Images/whatsapp-logo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 6vw;
+    height: 5vw;
+    cursor: pointer;
+}
+
+.map-container {
+    margin-right: 5vw;
+}
+
+.map-container iframe {
+    width: 20vw;
+    height: 30vh;
+    border: 0;
+}
+
+
+
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+/*לסמארטפונים*/
+@media (max-width: 768px) {
+    /*.panel {*/
+    /*    height: 100px;*/
+    /*}*/
+
+    /*.logo {*/
+    /*    width: 95px;*/
+    /*    height: 75px;*/
+    /*}*/
+
+    /*.gallery, .contact, .products {*/
+    /*    width: 100%;*/
+    /*    height: 40px;*/
+    /*    margin-top: 10px;*/
+    /*    left: 0;*/
+    /*    right: 0;*/
+    /*}*/
+
+    /*.instagram, .whatsapp {*/
+    /*    top: 10px;*/
+    /*    left: 20px;*/
+    /*    width: 50px;*/
+    /*    height: 50px;*/
+    /*}*/
+
+    /*.products-list {*/
+    /*    padding-top: 80px;*/
+    /*    margin-left: 10px;*/
+    /*}*/
+
+    /*.products-list .product-card {*/
+    /*    width: 100%;*/
+    /*    margin-bottom: 20px;*/
+    /*}*/
+
+    .panel {
+        width: 100%;
+        height: 12%;
+        /*position: fixed;*/
+        background-color: black;
+        max-width: 100%;
+        /*flex-direction: row;*/
+        display: flex;
+        flex-direction: row;
+        align-items: center; /* ליישור אנכי */
+        /*justify-content: space-between; !* או space-around/space-evenly לפי המרווח שתרצה *!*/
+
+
+    }
+
+
+    .logo {
+        /*width: 16%;*/
+        /*height: 25%;*/
+        /*left: 80%;*/
+        /*top: 2%;*/
+        display: none;
+    }
+
+    .gallery {
+        border: none;
+        position: fixed; /* או absolute אם זה בתוך קונטיינר */
+        width: 1%;
+        /*height: 5%;*/
+        left: 95%;
+        top: 3.6vh;
+
+    }
+
+
+    .gallery-dropdown-menu {
+        position: absolute;
+        background-color: black;
+        top: 2vh; /* היה 80px */
+        min-width: 8vw; /* היה 120px */
+        z-index: 9999;
+        border: 0.3vw solid #ddd;
+        border-radius: 0.5vw;
+        text-align: center;
+        left: 78vw; /* היה 505px */
+        padding: 0.8vw;
+        box-shadow: 0px 0.2vw 0.8vw rgba(0, 0, 0, 0.15);
+    }
+
+    .contact {
+        /*display: none;*/
+        border: none;
+        position: fixed; /* או absolute אם זה בתוך קונטיינר */
+        width: 20%;
+        /*height: 5%;*/
+        left: 60%;
+    }
+
+    .products {
+        border: none;
+        position: fixed;
+        white-space: nowrap;
+        width: 5%;
+        /*height: 5%;*/
+        left: 50%;
+    }
+
+
+    h2 {
+        font: bold 14px Arial;
+    }
+
+
+    .instagram {
+        width: 16vw; /* 5% מרוחב המסך */
+        height: 5vh; /* 5% מגובה המסך */
+        top: 3vh;
+        left: 12vw;
+        position: absolute;
+    }
+
+    .whatsapp {
+        width: 11vw;
+        height: 5vh;
+        top: 3vh;
+        left: 1vw;
+        position: absolute;
+    }
+
+    .instagram:hover {
+        width: 16vw; /* 5% מרוחב המסך */
+        height: 5vh;
+    }
+
+
+    .whatsapp:hover {
+        width: 11vw;
+        height: 5vh;
+    }
+
+    /*///////////////////////////////////////////////////////////*/
+    .fourScreen {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        padding: 4vh 5vw;
+        text-align: center;
+    }
+
+    .logo-1 {
+        width: 40vw;
+        height: 40vw;
+        margin: 0 auto;
+    }
+
+    .text-container {
+        margin-top: 1vh;
+    }
+
+    #text-1, #text-2 {
+        font-size: 4vw;
+        margin: 1vh 0;
+        justify-content: center;
+        text-align: center;
+
+    }
+
+    .logoim {
+        flex-direction: row;
+        justify-content: center;
+        gap: 1vw;
+        margin-left: 5vw;
+        /*margin: 2vh 0;*/
+    }
+
+    #instagram-2 {
+        width: 20vw;
+        height: 15vw;
+
+    }
+
+    #whatsapp-2 {
+        width: 15vw;
+        height: 15vw;
+    }
+
+    .map-container {
+        display: block;
+        width: 100%;
+        margin-top: 3vh;
+        margin-left: 5vw;
+    }
+
+    .map-container iframe {
+        width: 90%;
+        height: 25vh;
+        margin: 0 auto;
+        display: block;
+        border: none;
+
+    }
+
+}
+
+
+
