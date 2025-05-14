@@ -22,7 +22,7 @@
 
 /* רקעים לתמונות */
 .image-1 { background-image: url("Images/haircut-1.jpeg"); }
-.image-2 { background-image: url("Images/haircut-2.jpeg"); }
+/*.image-2 { background-image: url("Images/haircut-2.jpeg"); }*/
 .image-3 { background-image: url("Images/haircut-3.jpeg"); }
 .image-4 { background-image: url("Images/haircut-4.jpeg"); }
 .image-5 { background-image: url("Images/haircut-5.jpeg"); }
