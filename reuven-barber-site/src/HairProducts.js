@@ -12,12 +12,10 @@ import NavigationUtils from './NavigationUtils';
 import {useNavigate} from "react-router-dom";
 
 
-
-
 function withNavigation(Component) {
     return function WrappedComponent(props) {
         const navigate = useNavigate(); // שימוש ב-useNavigate כדי לספק את פונקציית הניווט
-        return <Component {...props} navigate={navigate} />;
+        return <Component {...props} navigate={navigate}/>;
     };
 }
 
@@ -53,13 +51,9 @@ class HairProducts extends React.Component {
             this.galleryMenuRef.current &&
             !this.galleryMenuRef.current.contains(event.target)
         ) {
-            this.setState({ showGalleryMenu: false });
+            this.setState({showGalleryMenu: false});
         }
     };
-
-
-
-
 
 
     getProductsList = () => {
@@ -124,7 +118,6 @@ class HairProducts extends React.Component {
 
         ];
     }
-
 
 
     render() {

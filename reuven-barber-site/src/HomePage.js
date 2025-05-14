@@ -1,12 +1,10 @@
 import React from 'react';
-import { useNavigate, useLocation } from 'react-router-dom'; // שימוש ב-useNavigate ו-useLocation
+import {useNavigate, useLocation} from 'react-router-dom'; // שימוש ב-useNavigate ו-useLocation
 import './HomePage.css';
 import reuvenBg from '../src/background-video.mp4'
-
 import MenGallery from "./MenGallery";
 import NavigationUtils from './NavigationUtils';
 import WomenGallery from "./WomenGallery";
-
 
 
 // פונקציה שעוטפת את המחלקה עם שימוש ב-useNavigate
@@ -14,10 +12,9 @@ function withNavigation(Component) {
     return function WrappedComponent(props) {
         const navigate = useNavigate(); // שימוש ב-useNavigate כדי לספק את פונקציית הניווט
         const location = useLocation(); // שימוש ב-useLocation כדי להעביר את המיקום
-        return <Component {...props} navigate={navigate} location={location} />;
+        return <Component {...props} navigate={navigate} location={location}/>;
     };
 }
-
 
 
 class HomePage extends React.Component {
@@ -29,29 +26,21 @@ class HomePage extends React.Component {
         };
 
         this.secondScreenRef = React.createRef();
-
         this.menScreenRef = React.createRef();
         this.womenScreenRef = React.createRef();
         this.fourthScreenRef = React.createRef();
-
         this.galleryMenuRef = React.createRef();
-
-
     }
 
     componentDidMount() {
         this.handleScroll(); // גלילה כאשר העמוד נטען לראשונה
         document.addEventListener('mousedown', this.handleClickOutside); // מאזין ללחיצות עכבר
-
         window.addEventListener('scroll', this.checkIfInView);
-
     }
 
     componentWillUnmount() {
         document.removeEventListener('mousedown', this.handleClickOutside);
-
         window.removeEventListener('scroll', this.checkIfInView);
-
     }
 
     componentDidUpdate(prevProps) {
@@ -67,12 +56,12 @@ class HomePage extends React.Component {
             this.galleryMenuRef.current &&
             !this.galleryMenuRef.current.contains(event.target)
         ) {
-            this.setState({ showGalleryMenu: false });
+            this.setState({showGalleryMenu: false});
         }
     };
 
     handleScroll = () => {
-        const { state } = this.props.location; // קבלת ה-state מהניווט
+        const {state} = this.props.location; // קבלת ה-state מהניווט
 
         if (state && state.scrollTo) {
             switch (state.scrollTo) {
@@ -90,8 +79,6 @@ class HomePage extends React.Component {
             }
         }
 
-
-
     }
 
     checkIfInView = () => {
@@ -104,7 +91,6 @@ class HomePage extends React.Component {
             imgs.forEach(img => img.classList.add('animate'));
         }
     }
-
 
 
     render() {
@@ -143,12 +129,6 @@ class HomePage extends React.Component {
                         )}
                     </div>
 
-                    {/*<button*/}
-                    {/*    className={"gallery"}*/}
-                    {/*    onClick={() => NavigationUtils.navigateTo(this.props.navigate, '/', {scrollTo: 'gallery'})}*/}
-                    {/*>*/}
-                    {/*    <h2>גלריה</h2>*/}
-                    {/*</button>*/}
                     <button
                         className={"contact"}
                         onClick={() => NavigationUtils.navigateTo(this.props.navigate, '/', {scrollTo: 'contact'})}
@@ -180,7 +160,6 @@ class HomePage extends React.Component {
                         <source src={reuvenBg} type={"video/mp4"}/>
                     </video>
 
-
                     <image className={"big-logo"}/>
 
                     <a href="https://wa.me/972547235955?text=היי%20ראובן%20אני%20רוצה%20לקבוע%20תור" id={"firstButton"}
@@ -196,7 +175,6 @@ class HomePage extends React.Component {
 
                     <div className="reuven-grid">
 
-
                         <div className="reuven-pair">
                             <p>שירות אדיב ויחס אישי באווירה הכי נעימה ומקצועית</p>
                             <div className="reuven-img img-3"/>
@@ -208,42 +186,12 @@ class HomePage extends React.Component {
                         </div>
 
                         <div className="reuven-pair">
-                            <p>מעל 15 שנות ניסיון בתחום עיצוב השיער, עם התמחות בעיצובים מודרניים וטיפולי שיער מתקדמים</p>
+                            <p>מעל 15 שנות ניסיון בתחום עיצוב השיער, עם התמחות בעיצובים מודרניים וטיפולי שיער
+                                מתקדמים</p>
                             <div className="reuven-img img-1"/>
                         </div>
                     </div>
                 </div>
-
-                {/*<div className={"secondScreen"}>*/}
-                {/*    <h1>ברוכים הבאים למספרה של ראובן</h1>*/}
-
-                {/*    <div className="reuven-container">*/}
-                {/*        <div className="reuven-text">*/}
-                {/*            <p>מעל 15 שנות ניסיון בתחום עיצוב השיער, עם התמחות בעיצובים מודרניים וטיפולים מתקדמים</p>*/}
-                {/*            <p>דגש על התאמה אישית מלאה לכל לקוח ולקוחה</p>*/}
-                {/*            <p>שירות מפנק ויחס אישי באווירה נעימה ומקצועית במיוחד</p>*/}
-                {/*        </div>*/}
-
-
-                {/*    </div>*/}
-
-                {/*    <div className={"images-row"}>*/}
-                {/*        <div className={"reuven-2"}/>*/}
-                {/*        <div className={"reuven-3"}/>*/}
-                {/*        <div className="reuven-1"/>*/}
-                {/*    </div>*/}
-                {/*</div>*/}
-
-
-                {/*<div className={"secondScreen"}>*/}
-                {/*    <h1>ברוכים הבאים למספרה של ראובן</h1>*/}
-                {/*    <h4>עם מעל 15 שנות נסיון, אני מזמין אתכם להנות ממגוון רחב מאוד של  תספורות וטיפולים מקצועיים לשיער</h4>*/}
-                {/*    <div className={"reuven-1"}/>*/}
-                {/*    <div className={"images-row"}>*/}
-                {/*        <div className={"reuven-2"}/>*/}
-                {/*        <div className={"reuven-3"}/>*/}
-                {/*    </div>*/}
-                {/*</div>*/}
 
                 <div className={"menScreen"} ref={this.menScreenRef}>
                     <h1 id={"men-gallery-text"}>גלריה - תספורות גברים</h1>

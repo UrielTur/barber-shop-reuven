@@ -1,152 +1,8 @@
-/*.carousel-container {*/
-/*    display: flex;*/
-/*    align-items: center;*/
-/*    justify-content: center;*/
-/*    position: relative;*/
-/*    width: 100%;*/
-/*    max-width: 600px;*/
-/*    margin: auto;*/
-/*}*/
-
-/*.image-container {*/
-/*    !*margin-top: 0px;*!*/
-/*    width: 700px;*/
-/*    height: 450px;*/
-/*    overflow: hidden;*/
-/*    border-radius: 10px;*/
-/*    background-size: cover;*/
-/*}*/
-
-/*.image-1 {*/
-/*    background-image: url("Images/haircut-1.jpeg");*/
-/*    background-position: center;*/
-/*    background-repeat: no-repeat;*/
-/*    background-size: 60%; !* תוכל לשנות לפי הצורך *!*/
-
-/*}*/
-
-/*.image-2 {*/
-/*    background-image: url("Images/haircut-2.jpeg");*/
-/*    background-position: center;*/
-/*    background-repeat: no-repeat;*/
-/*    background-size: 75%; !* תוכל לשנות לפי הצורך *!*/
-
-/*}*/
-
-/*.image-3 {*/
-/*    background-image: url("Images/haircut-3.jpeg");*/
-/*    background-size: contain;*/
-/*    background-repeat: no-repeat;*/
-/*    margin-left: 80px;*/
-/*}*/
-
-/*.image-4 {*/
-/*    background-image: url("Images/haircut-4.jpeg");*/
-/*    background-position: center;*/
-/*    background-repeat: no-repeat;*/
-/*    background-size: 85%; !* תוכל לשנות לפי הצורך *!*/
-
-/*}*/
-
-/*.image-5 {*/
-/*    background-image: url("Images/haircut-5.jpeg");*/
-/*    background-position: center;*/
-/*    background-repeat: no-repeat;*/
-/*    background-size: 65%; !* תוכל לשנות לפי הצורך *!*/
-
-/*}*/
-
-/*.image-6 {*/
-/*    background-image: url("Images/haircut-6.jpeg");*/
-/*    background-position: center;*/
-/*    background-repeat: no-repeat;*/
-/*    background-size: 70%; !* תוכל לשנות לפי הצורך *!*/
-/*}*/
-
-/*.image-7 {*/
-/*    background-image: url("Images/haircut-7.jpeg");*/
-/*    background-position: center;*/
-/*    background-repeat: no-repeat;*/
-/*    background-size: 70%; !* תוכל לשנות לפי הצורך *!*/
-/*}*/
-
-/*.prev-button, .next-button {*/
-/*    background-color: #333;*/
-/*    color: #fff;*/
-/*    border: none;*/
-/*    padding: 10px 20px;*/
-/*    font-size: 24px;*/
-/*    cursor: pointer;*/
-/*    transition: background-color 0.3s;*/
-/*    position: absolute;*/
-/*    top: 50%;*/
-/*    transform: translateY(-50%);*/
-/*}*/
-
-/*.prev-button {*/
-/*    left: -60px;*/
-/*}*/
-
-/*.next-button {*/
-/*    right: -60px;*/
-/*}*/
-
-/*.prev-button:hover, .next-button:hover {*/
-/*    background-color: #555;*/
-/*}*/
-
-
-/*@media (max-width: 768px) {*/
-/*    .carousel-container {*/
-/*        max-width: 100%;*/
-/*    }*/
-
-/*    .image-container {*/
-/*        !*margin-top: 0px;*!*/
-/*        width: 85vw;*/
-/*        height: 60vh;*/
-/*    }*/
-
-/*    .prev-button, .next-button {*/
-/*        font-size: 16px;*/
-/*        padding: 8px 16px;*/
-/*    }*/
-
-/*    .prev-button {*/
-/*        left: -30px;*/
-/*    }*/
-
-/*    .next-button {*/
-/*        right: -30px;*/
-/*    }*/
-
-/*    .image-1{*/
-/*        background-position: center;*/
-
-/*    }*/
-
-/*    .image-2 {*/
-/*        background-position: right;*/
-
-/*    }*/
-
-/*    .image-3 {*/
-/*        display: none;*/
-
-/*    }*/
-
-/*}*/
-
-
-
-
 .carousel-wrapper {
     width: 85vw; /* במקום 110% */
     max-width: 85vw;
     height: 80vh;
-    /*margin: auto;*/
     padding: 3vh 0;
-
     position: relative;
     overflow: visible;
 }
@@ -159,29 +15,75 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    /*margin: 1 1vw;*/
     box-shadow: 0 0.5vh 1.2vh rgba(0, 0, 0, 0.2);
     border: 0.5vw solid white;
     box-sizing: border-box;
 }
 
 /* תמונות */
-.women-1  { background-image: url("Images/image-1.jpeg"); }
-.women-2  { background-image: url("Images/image-2.jpeg"); }
-.women-3  { background-image: url("Images/image-3.jpeg"); }
-.women-4  { background-image: url("Images/image-4.jpeg"); }
-.women-5  { background-image: url("Images/image-5.jpeg"); }
-.women-6  { background-image: url("Images/image-6.jpeg"); }
-.women-7  { background-image: url("Images/image-7.jpeg"); }
-.women-8  { background-image: url("Images/image-8.jpeg"); }
-.women-9  { background-image: url("Images/image-9.jpeg"); }
-.women-10 { background-image: url("Images/image-10.jpeg"); }
-.women-11 { background-image: url("Images/image-11.jpeg"); }
-.women-12 { background-image: url("Images/image-12.jpeg"); }
-.women-13 { background-image: url("Images/image-13.jpeg"); }
-.women-14 { background-image: url("Images/image-14.jpeg"); }
-.women-15 { background-image: url("Images/image-15.jpeg"); }
-.women-16 { background-image: url("Images/image-16.jpeg"); }
+.women-1 {
+    background-image: url("Images/image-1.jpeg");
+}
+
+.women-2 {
+    background-image: url("Images/image-2.jpeg");
+}
+
+.women-3 {
+    background-image: url("Images/image-3.jpeg");
+}
+
+.women-4 {
+    background-image: url("Images/image-4.jpeg");
+}
+
+.women-5 {
+    background-image: url("Images/image-5.jpeg");
+}
+
+.women-6 {
+    background-image: url("Images/image-6.jpeg");
+}
+
+.women-7 {
+    background-image: url("Images/image-7.jpeg");
+}
+
+.women-8 {
+    background-image: url("Images/image-8.jpeg");
+}
+
+.women-9 {
+    background-image: url("Images/image-9.jpeg");
+}
+
+.women-10 {
+    background-image: url("Images/image-10.jpeg");
+}
+
+.women-11 {
+    background-image: url("Images/image-11.jpeg");
+}
+
+.women-12 {
+    background-image: url("Images/image-12.jpeg");
+}
+
+.women-13 {
+    background-image: url("Images/image-13.jpeg");
+}
+
+.women-14 {
+    background-image: url("Images/image-14.jpeg");
+}
+
+.women-15 {
+    background-image: url("Images/image-15.jpeg");
+}
+
+.women-16 {
+    background-image: url("Images/image-16.jpeg");
+}
 
 /* חצים מותאמים אישית */
 .custom-arrow {
@@ -205,6 +107,7 @@
 .custom-arrow.next {
     right: 1vw;
 }
+
 /* מובייל */
 @media (max-width: 768px) {
     .carousel-wrapper .slick-slide > div {
@@ -215,7 +118,6 @@
     .image-container {
         max-width: 85vw;
         height: 55vh;
-        /*margin: 0 auto;*/
     }
 
     .carousel-wrapper {
@@ -224,15 +126,7 @@
         height: 65vh;
     }
 
-
     .custom-arrow {
         display: none !important;
     }
 }
-
-    /*.image-3 {*/
-    /*    display: none; !* אם אתה עדיין רוצה להעלים אותה במובייל *!*/
-    /*}*/
-
-
-
