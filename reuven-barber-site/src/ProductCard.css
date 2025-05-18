@@ -6,10 +6,8 @@
     justify-content: space-between;
     gap: 2vh;
     padding: 2vh 4vw; /* padding מימין ומשמאל */
-    /*margin: 0 auto;     !* מרכז את כל הגלריה *!*/
     box-sizing: border-box;
     margin-right: 1vw;
-
 }
 
 .product-card {
@@ -23,9 +21,7 @@
     font-family: 'Arial', sans-serif;
     background-color: #f8f9fa;
     box-sizing: border-box;
-    /* ❌ אל תשתמש בזה: margin-left: 10vw; */
 }
-
 
 /* עיצוב התמונה */
 .product-image {
@@ -38,7 +34,6 @@
 /* תוכן המוצר */
 .product-info {
     margin-top: 1.5vh;
-
 }
 
 /* שם המוצר */
@@ -106,9 +101,7 @@
 
 
     .products-list {
-
         margin-right: 4vw;
-
     }
 }
 

@@ -12,7 +12,6 @@ const ProductCard = (props) => {
                     <span className="price-discounted">₪{props.discountedPrice}</span>
                     <span className="price-original">₪{props.originalPrice}</span>
                 </div>
-                {/*<button className="add-to-cart">הוסף להזמנה</button>*/}
             </div>
         </div>
     );

@@ -21,13 +21,30 @@
 }
 
 /* רקעים לתמונות */
-.image-1 { background-image: url("Images/haircut-1.jpeg"); }
+.image-1 {
+    background-image: url("Images/haircut-1.jpeg");
+}
+
 /*.image-2 { background-image: url("Images/haircut-2.jpeg"); }*/
-.image-3 { background-image: url("Images/haircut-3.jpeg"); }
-.image-4 { background-image: url("Images/haircut-4.jpeg"); }
-.image-5 { background-image: url("Images/haircut-5.jpeg"); }
-.image-6 { background-image: url("Images/haircut-6.jpeg"); }
-.image-7 { background-image: url("Images/haircut-7.jpeg"); }
+.image-3 {
+    background-image: url("Images/haircut-3.jpeg");
+}
+
+.image-4 {
+    background-image: url("Images/haircut-4.jpeg");
+}
+
+.image-5 {
+    background-image: url("Images/haircut-5.jpeg");
+}
+
+.image-6 {
+    background-image: url("Images/haircut-6.jpeg");
+}
+
+.image-7 {
+    background-image: url("Images/haircut-7.jpeg");
+}
 
 /* חצים מותאמים אישית */
 .custom-arrow {
@@ -71,7 +88,7 @@
         height: 65vh;
     }
 
-        .custom-arrow {
+    .custom-arrow {
         display: none !important;
     }
 }
