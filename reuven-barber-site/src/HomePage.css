@@ -472,13 +472,13 @@ html {
         display: none;
     }
 
-    .gallery {
-        border: none;
-        position: fixed; /* או absolute אם זה בתוך קונטיינר */
-        width: 1%;
-        left: 90vw;
-        top: 3.6vh;
-    }
+    /*.gallery {*/
+    /*    border: none;*/
+    /*    position: fixed; !* או absolute אם זה בתוך קונטיינר *!*/
+    /*    width: 1%;*/
+    /*    left: 90vw;*/
+    /*    top: 3.6vh;*/
+    /*}*/
 
     .gallery-dropdown-menu {
         position: absolute;
@@ -504,15 +504,35 @@ html {
         /*left: 60%;*/
     }
 
-    .products {
-        top: 3.6vh; /* הוסף שורה זו */
-        border: none;
-        position: fixed;
-        white-space: nowrap;
-        width: 5%;
-        /*height: 5%;*/
-        left: 65vw;
+    /*.products {*/
+    /*    top: 3.6vh; !* הוסף שורה זו *!*/
+    /*    border: none;*/
+    /*    position: fixed;*/
+    /*    white-space: nowrap;*/
+    /*    width: 5%;*/
+    /*    !*height: 5%;*!*/
+    /*    left: 65vw;*/
+    /*}*/
+
+
+    .gallery, .products {
+        padding: 1vh 2vw; /* גובה ורוחב של ריפוד */
+        font-size: 2vw;
+        width: auto; /* או פשוט לא להגדיר width בכלל */
     }
+
+    .gallery {
+        position: fixed;
+        top: 3.0vh;
+        left: 80vw; /* במקום left */
+    }
+
+    .products {
+        position: fixed;
+        top: 3.0vh;
+        right: 35vw;
+    }
+
 
     h2 {
         font: bold 14px Arial;

@@ -156,7 +156,7 @@ class HomePage extends React.Component {
                 </div>
 
                 <div className="bg1">
-                    <video className={"video-bg"} autoPlay muted loop id={"background-video"}>
+                    <video className={"video-bg"} autoPlay muted loop playsInline id={"background-video"}>
                         <source src={reuvenBg} type={"video/mp4"}/>
                     </video>
 
