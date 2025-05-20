@@ -523,13 +523,13 @@ html {
 
     .gallery {
         position: fixed;
-        top: 3.0vh;
+        top: 2.5vh;
         left: 80vw; /* במקום left */
     }
 
     .products {
         position: fixed;
-        top: 3.0vh;
+        top: 2.5vh;
         right: 35vw;
     }
 
