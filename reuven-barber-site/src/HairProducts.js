@@ -168,10 +168,16 @@ class HairProducts extends React.Component {
                         <h2>המוצרים שלנו</h2>
                     </button>
 
-                    <a href="https://www.instagram.com/avizaurov_barbershop?igsh=cnRhM3Rub3pxamli"
-                       className={"instagram"} target={"_blank"} rel={"noopener noreferrer"}></a>
-                    <a href="https://wa.me/972527455035" className={"whatsapp"} target={"_blank"}
-                       rel={"noopener noreferrer"}></a>
+                    <a href="https://www.instagram.com/reuvenisraelov/"
+                       className={"instagram"}
+                       target={"_blank"}
+                       rel={"noopener noreferrer"}>
+                    </a>
+                    <a href="https://wa.me/972547235955?text=היי%20ראובן%20אני%20רוצה%20לקבוע%20תור"
+                       className={"whatsapp"}
+                       target={"_blank"}
+                       rel={"noopener noreferrer"}>
+                    </a>
                 </div>
 
                 <div className={"products-list"} style={{paddingTop: '140px', marginLeft: '20px'}}>
