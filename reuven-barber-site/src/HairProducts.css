@@ -12,22 +12,18 @@ button:focus-visible {
     -webkit-tap-highlight-color: transparent;
 }
 
-
-
 .panel {
-    display: flex; /* ← חשוב */
+    display: flex;
     position: fixed;
     background-color: black;
     width: 100%;
     height: 120px;
     z-index: 9998;
     flex-direction: row;
-    align-items: center; /* ליישור אנכי */
-    /*align-items: center; !* ליישור אנכי *!*/
-    justify-content: space-between; /* ← אופציונלי, לתיאום מרחקים */
-    padding: 0 2vw; /* ← אופציונלי, רווח מהקצוות */
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2vw;
     direction: rtl;
-
 }
 
 .logo {
@@ -37,11 +33,9 @@ button:focus-visible {
     background-repeat: no-repeat;
     left: 88vw;
     top: 1vh;
-    width: 20vw; /* במקום 130px */
+    width: 20vw;
     height: 15vh;
     cursor: pointer;
-
-
 }
 
 .gallery {
@@ -49,33 +43,26 @@ button:focus-visible {
     border: none;
     color: white;
     position: relative;
-    left: 3vw; /* היה 550px */
+    left: 3vw;
     margin-right: 5vw;
-    width: 5vw; /* היה 50px */
-    /*height: 0vh;*/
+    width: 5vw;
     cursor: pointer;
-
 }
 
 .gallery:hover {
     color: lightgray;
 }
 
-
 .contact {
     background-color: black;
     border: none;
     color: white;
     position: relative;
-    left: 25vw; /* היה 250px */
-    /*margin-top: 4vh;*/
+    left: 25vw;
     margin-right: 5vw;
-    width: 10vw; /* היה 100px */
-    /*height: 5vh;*/
+    width: 10vw;
     cursor: pointer;
     white-space: nowrap;
-
-
 }
 
 .contact:hover {
@@ -88,26 +75,15 @@ button:focus-visible {
     color: white;
     position: relative;
     white-space: nowrap;
-    /*right: 125px;*/
-    /*margin-top: 30px;*/
-    /*margin-right: 50px;*/
-    /*width: 150px;*/
-    /*height: 50px;*/
-
-    left: 45vw; /* היה 125px */
-    /*margin-top: 3vh;*/
+    left: 45vw;
     margin-right: 2vw;
-    /*margin-left: 2vw;*/
-    width: 10vw; /* היה 150px */
-    /*height: 5vh;*/
+    width: 10vw;
     cursor: pointer;
-
 }
 
 .products:hover {
     color: lightgray;
 }
-
 
 .instagram {
     background-color: black;
@@ -116,17 +92,15 @@ button:focus-visible {
     position: fixed;
     background-size: contain;
     background-repeat: no-repeat;
-    top: 3.5vh; /* היה 30px */
-    left: 8vw; /* היה 110px */
-    width: 6.5vw; /* היה 75px */
+    top: 3.5vh;
+    left: 8vw;
+    width: 6.5vw;
     height: 5vw;
     cursor: pointer;
-
 }
 
 .instagram:hover {
     width: 7vw;
-    /*height: 8vw;*/
     border-color: white;
 }
 
@@ -138,11 +112,10 @@ button:focus-visible {
     background-size: contain;
     background-repeat: no-repeat;
     top: 3.5vh;
-    left: 2.5vw; /* היה 50px */
-    width: 6vw; /* היה 55px */
+    left: 2.5vw;
+    width: 6vw;
     height: 4.6vw;
     cursor: pointer;
-
 }
 
 .whatsapp:hover {
@@ -150,7 +123,6 @@ button:focus-visible {
     height: 4.75vw;
     border-color: white;
 }
-
 
 .gallery-dropdown {
     position: relative;
@@ -160,15 +132,14 @@ button:focus-visible {
 .gallery-dropdown-menu {
     position: absolute;
     background-color: black;
-    top: 8vh; /* היה 80px */
-    min-width: 8vw; /* היה 120px */
+    top: 8vh;
+    min-width: 8vw;
     z-index: 9999;
     border: 0.3vw solid #ddd;
     border-radius: 0.5vw;
     text-align: center;
-    left: 0vw; /* היה 505px */
     padding: 0.8vw;
-    box-shadow: 0px 0.2vw 0.8vw rgba(0, 0, 0, 0.15);
+    box-shadow: 0.2vw 0.8vw rgba(0, 0, 0, 0.15);
 }
 
 .gallery-dropdown-menu button {
@@ -180,12 +151,10 @@ button:focus-visible {
     cursor: pointer;
 }
 
-
 .gallery-dropdown-menu button:hover {
-    color: lightgray; /* רק הטקסט יתחלף */
-    cursor: pointer; /* משדר שהחלק הזה ניתן ללחיצה */
+    color: lightgray;
+    cursor: pointer;
 }
-
 
 .products-list {
     background-color: #eff0f5;
@@ -210,8 +179,6 @@ button:focus-visible {
     padding: 0 10vw;
     box-sizing: border-box;
     margin: 2vh 1vw;
-
-    /*top: 10vh;*/
 }
 
 .logo-1 {
@@ -242,7 +209,6 @@ button:focus-visible {
     display: flex;
     flex-direction: row;
     align-items: center;
-    /*gap: 0.5vh;*/
     margin-right: 10vw;
 }
 
@@ -276,10 +242,7 @@ button:focus-visible {
     border: 0;
 }
 
-
 /*////////////////////////////////////////////////////////////////////////////////////////////////////////*/
-
-
 /*לסמארטפונים*/
 @media (max-width: 768px) {
 
@@ -290,9 +253,8 @@ button:focus-visible {
         max-width: 100%;
         display: flex;
         flex-direction: row;
-        align-items: center; /* ליישור אנכי */
+        align-items: center;
     }
-
 
     .logo {
         display: none;
@@ -300,34 +262,30 @@ button:focus-visible {
 
     .gallery {
         border: none;
-        position: fixed; /* או absolute אם זה בתוך קונטיינר */
+        position: fixed;
         width: 1%;
         left: 95%;
         top: 3.6vh;
-
     }
-
 
     .gallery-dropdown-menu {
         position: absolute;
         background-color: black;
-        top: 2vh; /* היה 80px */
-        min-width: 8vw; /* היה 120px */
+        top: 2vh;
+        min-width: 8vw;
         z-index: 9999;
         border: 0.3vw solid #ddd;
         border-radius: 0.5vw;
         text-align: center;
-        left: 78vw; /* היה 505px */
+        left: 78vw;
         padding: 0.8vw;
-        box-shadow: 0px 0.2vw 0.8vw rgba(0, 0, 0, 0.15);
+        box-shadow: 0.2vw 0.8vw rgba(0, 0, 0, 0.15);
     }
 
     .contact {
-        /*display: none;*/
         border: none;
-        position: fixed; /* או absolute אם זה בתוך קונטיינר */
+        position: fixed;
         width: 20%;
-        /*height: 5%;*/
         left: 60%;
     }
 
@@ -336,19 +294,16 @@ button:focus-visible {
         position: fixed;
         white-space: nowrap;
         width: 5%;
-        /*height: 5%;*/
         left: 50%;
     }
-
 
     h2 {
         font: bold 14px Arial;
     }
 
-
     .instagram {
-        width: 16vw; /* 5% מרוחב המסך */
-        height: 5vh; /* 5% מגובה המסך */
+        width: 16vw;
+        height: 5vh;
         top: 3vh;
         left: 12vw;
         position: absolute;
@@ -363,10 +318,9 @@ button:focus-visible {
     }
 
     .instagram:hover {
-        width: 16vw; /* 5% מרוחב המסך */
+        width: 16vw;
         height: 5vh;
     }
-
 
     .whatsapp:hover {
         width: 11vw;
@@ -398,7 +352,6 @@ button:focus-visible {
         margin: 1vh 0;
         justify-content: center;
         text-align: center;
-
     }
 
     .logoim {
@@ -406,13 +359,11 @@ button:focus-visible {
         justify-content: center;
         gap: 1vw;
         margin-left: 5vw;
-        /*margin: 2vh 0;*/
     }
 
     #instagram-2 {
         width: 20vw;
         height: 15vw;
-
     }
 
     #whatsapp-2 {
@@ -433,10 +384,6 @@ button:focus-visible {
         margin: 0 auto;
         display: block;
         border: none;
-
     }
 
 }
-
-
-

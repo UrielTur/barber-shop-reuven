@@ -1,5 +1,5 @@
 .carousel-wrapper {
-    width: 85vw; /* במקום 110% */
+    width: 85vw;
     max-width: 85vw;
     height: 80vh;
     padding: 3vh 0;
@@ -9,7 +9,7 @@
 
 .image-container {
     width: 80vw;
-    height: 70vh; /* יחסית לגובה המסך */
+    height: 70vh;
     overflow: hidden;
     border-radius: 1.0vw;
     background-size: cover;
@@ -20,12 +20,10 @@
     box-sizing: border-box;
 }
 
-/* רקעים לתמונות */
 .image-1 {
     background-image: url("Images/haircut-1.jpeg");
 }
 
-/*.image-2 { background-image: url("Images/haircut-2.jpeg"); }*/
 .image-3 {
     background-image: url("Images/haircut-3.jpeg");
 }
@@ -46,7 +44,6 @@
     background-image: url("Images/haircut-7.jpeg");
 }
 
-/* חצים מותאמים אישית */
 .custom-arrow {
     position: absolute;
     top: 50%;
@@ -83,7 +80,7 @@
     }
 
     .carousel-wrapper {
-        width: 100vw; /* במקום 110% */
+        width: 100vw;
         max-width: 85vw;
         height: 65vh;
     }
@@ -91,6 +88,5 @@
     .custom-arrow {
         display: none !important;
     }
+
 }
-
-

@@ -40,7 +40,7 @@ const MenGallery = () => {
                     slidesToScroll: 1,
                     arrows: false,
                     autoplay: true,
-                    autoplaySpeed: 2500,    // כל 3 שניות
+                    autoplaySpeed: 2500,    // מעבר כל 2.5 שניות
 
                 },
             },

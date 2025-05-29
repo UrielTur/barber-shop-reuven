@@ -1,14 +1,7 @@
 class NavigationUtils {
     static navigateTo(navigate, path, state = {}) {
-        navigate(path, { state }); // מבצע ניווט לנתיב עם state שניתן
+        navigate(path, {state}); // מבצע ניווט לנתיב עם state שניתן
     }
-
-    // static scrollToRef(ref) {
-    //     if (ref.current) {
-    //         ref.current.scrollIntoView({ behavior: 'smooth' });
-    //     }
-    // }
-
 
     static scrollToRef(ref) {
         if (ref.current) {
@@ -19,7 +12,6 @@ class NavigationUtils {
             });
         }
     }
-
 
 }
 

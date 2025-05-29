@@ -30,9 +30,7 @@ class HairProducts extends React.Component {
         this.menScreenRef = React.createRef();
         this.womenScreenRef = React.createRef();
         this.fourthScreenRef = React.createRef();
-
         this.galleryMenuRef = React.createRef();
-
     }
 
 

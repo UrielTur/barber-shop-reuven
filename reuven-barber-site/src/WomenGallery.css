@@ -1,5 +1,5 @@
 .carousel-wrapper {
-    width: 85vw; /* במקום 110% */
+    width: 85vw;
     max-width: 85vw;
     height: 80vh;
     padding: 3vh 0;
@@ -9,7 +9,7 @@
 
 .image-container {
     width: 80vw;
-    height: 70vh; /* יחסית לגובה המסך */
+    height: 70vh;
     overflow: hidden;
     border-radius: 1.0vw;
     background-size: cover;
@@ -20,7 +20,6 @@
     box-sizing: border-box;
 }
 
-/* תמונות */
 .women-1 {
     background-image: url("Images/image-1.jpeg");
 }
@@ -85,7 +84,6 @@
     background-image: url("Images/image-16.jpeg");
 }
 
-/* חצים מותאמים אישית */
 .custom-arrow {
     position: absolute;
     top: 50%;
@@ -109,6 +107,7 @@
 }
 
 /* מובייל */
+/*///////////////////////////////////////////////////////////////////////////*/
 @media (max-width: 768px) {
     .carousel-wrapper .slick-slide > div {
         display: flex;
@@ -121,7 +120,7 @@
     }
 
     .carousel-wrapper {
-        width: 100vw; /* במקום 110% */
+        width: 100vw;
         max-width: 85vw;
         height: 65vh;
     }

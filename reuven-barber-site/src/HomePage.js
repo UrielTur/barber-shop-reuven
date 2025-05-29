@@ -16,7 +16,6 @@ function withNavigation(Component) {
     };
 }
 
-
 class HomePage extends React.Component {
 
     constructor(props) {
@@ -169,12 +168,9 @@ class HomePage extends React.Component {
                     </a>
                 </div>
 
-
                 <div className={"secondScreen"} ref={this.secondScreenRef}>
                     <h1>ברוכים הבאים למספרה של ראובן</h1>
-
                     <div className="reuven-grid">
-
                         <div className="reuven-pair">
                             <p>שירות אדיב ויחס אישי באווירה הכי נעימה ומקצועית</p>
                             <div className="reuven-img img-3"/>
@@ -199,13 +195,11 @@ class HomePage extends React.Component {
                     <div><MenGallery> </MenGallery></div>
                 </div>
 
-
                 <div className={"womenScreen"} ref={this.womenScreenRef}>
                     <h1 id={"women-gallery-text"}>גלריה - תספורות נשים</h1>
                     <p> החלקות, צבע, גוונים</p>
                     <div><WomenGallery> </WomenGallery></div>
                 </div>
-
 
                 <div className={"fourScreen"} ref={this.fourthScreenRef}>
                     <a href="/" onClick={(e) => {

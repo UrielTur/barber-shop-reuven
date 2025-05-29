@@ -1,6 +1,7 @@
 html {
     overflow-x: hidden;
 }
+
 button:focus,
 button:focus-visible {
     outline: none;
@@ -11,20 +12,18 @@ button:focus-visible {
     -webkit-tap-highlight-color: transparent;
 }
 
-
 .panel {
-    display: flex; /* ← חשוב */
+    display: flex;
     position: fixed;
     background-color: black;
     width: 100%;
     height: 120px;
     z-index: 9998;
     flex-direction: row;
-    align-items: center; /* ליישור אנכי */
-    justify-content: space-between; /* ← אופציונלי, לתיאום מרחקים */
-    padding: 0 2vw; /* ← אופציונלי, רווח מהקצוות */
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2vw;
     direction: rtl;
-
 }
 
 .logo {
@@ -34,10 +33,9 @@ button:focus-visible {
     background-repeat: no-repeat;
     left: 88vw;
     top: 1vh;
-    width: 20vw; /* במקום 130px */
+    width: 20vw;
     height: 15vh;
     cursor: pointer;
-
 }
 
 .gallery {
@@ -45,18 +43,15 @@ button:focus-visible {
     border: none;
     color: white;
     position: relative;
-    left: 3vw; /* היה 550px */
+    left: 3vw;
     margin-right: 5vw;
-    width: 5vw; /* היה 50px */
-    /*height: 0vh;*/
+    width: 5vw;
     cursor: pointer;
-
 }
 
 .gallery:hover {
     color: lightgray;
 }
-
 
 .contact {
     background-color: black;
@@ -64,14 +59,10 @@ button:focus-visible {
     color: white;
     position: relative;
     left: 25vw; /* היה 250px */
-    /*margin-top: 4vh;*/
     margin-right: 5vw;
     width: 10vw; /* היה 100px */
-    /*height: 5vh;*/
     cursor: pointer;
     white-space: nowrap;
-
-
 }
 
 .contact:hover {
@@ -106,7 +97,6 @@ button:focus-visible {
     width: 6.5vw; /* היה 75px */
     height: 5vw;
     cursor: pointer;
-
 }
 
 .instagram:hover {
@@ -122,8 +112,8 @@ button:focus-visible {
     background-size: contain;
     background-repeat: no-repeat;
     top: 3.5vh;
-    left: 2.5vw; /* היה 50px */
-    width: 6vw; /* היה 55px */
+    left: 2.5vw;
+    width: 6vw;
     height: 4.6vw;
     cursor: pointer;
 }
@@ -134,7 +124,6 @@ button:focus-visible {
     border-color: white;
 }
 
-
 .gallery-dropdown {
     position: relative;
     display: inline-block;
@@ -143,15 +132,14 @@ button:focus-visible {
 .gallery-dropdown-menu {
     position: absolute;
     background-color: black;
-    top: 8vh; /* היה 80px */
-    min-width: 8vw; /* היה 120px */
+    top: 8vh;
+    min-width: 8vw;
     z-index: 9999;
     border: 0.3vw solid #ddd;
     border-radius: 0.5vw;
     text-align: center;
-    left: 0vw; /* היה 505px */
     padding: 0.8vw;
-    box-shadow: 0px 0.2vw 0.8vw rgba(0, 0, 0, 0.15);
+    box-shadow: 0.2vw 0.8vw rgba(0, 0, 0, 0.15);
 }
 
 .gallery-dropdown-menu button {
@@ -168,7 +156,6 @@ button:focus-visible {
     cursor: pointer; /* משדר שהחלק הזה ניתן ללחיצה */
 }
 
-
 /*////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 .bg1 {
     position: relative;
@@ -179,7 +166,7 @@ button:focus-visible {
 
 .big-logo {
     position: absolute;
-    top: 25vh; /* קצת מרווח מהחלק העליון */
+    top: 25vh;
     left: 50%;
     transform: translateX(-50%);
     background-image: url("Images/logo-barber.png");
@@ -208,7 +195,6 @@ button:focus-visible {
     transition: all 0.3s ease;
     opacity: 0.75;
     white-space: nowrap;
-
 }
 
 #firstButton:hover {
@@ -239,7 +225,6 @@ button:focus-visible {
     width: 100vw;
     height: 85vh;
     overflow-x: hidden;
-
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -267,7 +252,7 @@ button:focus-visible {
 }
 
 .reuven-pair {
-    width: 22vw; /* מספיק צר כדי ש-3 ייכנסו בשורה */
+    width: 22vw; /* כדי ש-3 ייכנסו בשורה */
     color: #f1c573;
     font-size: 1.2vw;
     margin: 2vh 1vw;
@@ -298,7 +283,6 @@ button:focus-visible {
     transform: translateY(0);
 }
 
-/* רקע לתמונות */
 .img-1 {
     background-image: url("Images/reuven-active-1.jpeg");
 }
@@ -310,7 +294,6 @@ button:focus-visible {
 .img-3 {
     background-image: url("Images/reuven-active-3.jpeg");
 }
-
 
 /*////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
@@ -334,13 +317,11 @@ button:focus-visible {
     margin-top: 10px;
 }
 
-
 .menScreen p {
     color: #f5c542;
     font-size: 18px;
     margin-top: -15px;
 }
-
 
 /*////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
@@ -371,7 +352,6 @@ button:focus-visible {
     font-size: 18px;
     margin-top: -15px;
 }
-
 
 /*////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
@@ -416,7 +396,6 @@ button:focus-visible {
     display: flex;
     flex-direction: row;
     align-items: center;
-    /*gap: 0.5vh;*/
     margin-right: 10vw;
 }
 
@@ -467,7 +446,6 @@ button:focus-visible {
         overflow-x: hidden;
     }
 
-
     .panel {
         width: 100%;
         height: 12%;
@@ -475,66 +453,41 @@ button:focus-visible {
         max-width: 100%;
         display: flex;
         flex-direction: row;
-        align-items: center; /* ליישור אנכי */
+        align-items: center;
     }
 
     .logo {
         display: none;
     }
 
-    /*.gallery {*/
-    /*    border: none;*/
-    /*    position: fixed; !* או absolute אם זה בתוך קונטיינר *!*/
-    /*    width: 1%;*/
-    /*    left: 90vw;*/
-    /*    top: 3.6vh;*/
-    /*}*/
-
     .gallery-dropdown-menu {
         position: absolute;
         background-color: black;
-        top: 3.5vh; /* היה 80px */
-        min-width: 5vw; /* היה 120px */
+        top: 3.5vh;
+        min-width: 5vw;
         z-index: 9999;
         border: 0.3vw solid #ddd;
         border-radius: 0.5vw;
         text-align: center;
-        /*left: 75vw; !* היה 505px *!*/
         left: 73vw;
         padding: 0.8vw;
-        box-shadow: 0px 0.2vw 0.8vw rgba(0, 0, 0, 0.15);
+        box-shadow: 0.2vw 0.8vw rgba(0, 0, 0, 0.15);
     }
 
     .contact {
         display: none;
-        /*top: 3.6vh; !* הוסף שורה זו *!*/
-        /*border: none;*/
-        /*position: fixed; !* או absolute אם זה בתוך קונטיינר *!*/
-        /*width: 20%;*/
-        /*left: 60%;*/
     }
 
-    /*.products {*/
-    /*    top: 3.6vh; !* הוסף שורה זו *!*/
-    /*    border: none;*/
-    /*    position: fixed;*/
-    /*    white-space: nowrap;*/
-    /*    width: 5%;*/
-    /*    !*height: 5%;*!*/
-    /*    left: 65vw;*/
-    /*}*/
-
-
     .gallery, .products {
-        padding: 1vh 2vw; /* גובה ורוחב של ריפוד */
+        padding: 1vh 2vw;
         font-size: 2vw;
-        width: auto; /* או פשוט לא להגדיר width בכלל */
+        width: auto;
     }
 
     .gallery {
         position: fixed;
         top: 2.5vh;
-        left: 80vw; /* במקום left */
+        left: 80vw;
     }
 
     .products {
@@ -543,14 +496,13 @@ button:focus-visible {
         right: 35vw;
     }
 
-
     h2 {
         font: bold 14px Arial;
     }
 
     .instagram {
-        width: 16vw; /* 5% מרוחב המסך */
-        height: 5vh; /* 5% מגובה המסך */
+        width: 16vw;
+        height: 5vh;
         top: 3vh;
         left: 12vw;
         position: absolute;
@@ -565,7 +517,7 @@ button:focus-visible {
     }
 
     .instagram:hover {
-        width: 16vw; /* 5% מרוחב המסך */
+        width: 16vw;
         height: 5vh;
     }
 
@@ -622,31 +574,28 @@ button:focus-visible {
         align-items: center;
     }
 
-
     #firstButton h1 {
         font: bold 30px Arial;
         white-space: nowrap;
     }
 
-
     /*////////////////////////////////////////////////////////////////////////////////////////////////////////*/
     .secondScreen {
         width: 100vw;
-        height: auto; /* גובה משתנה לפי התוכן */
+        height: auto;
         padding: 3vh 3vw;
     }
 
     .secondScreen h1 {
-        font-size: 6vw; /* גופן גדול ומרשים אבל לא מגוחך */
+        font-size: 6vw;
         width: 100%;
         text-align: center;
         margin: 0 auto 4vh auto;
     }
 
     .reuven-grid {
-        flex-direction: column-reverse; /* בתצוגת מובייל - תמונה מעל טקסט */
+        flex-direction: column-reverse; /* בתצוגת טלפון - תמונה מעל טקסט */
         align-items: center;
-        gap: 0vh;
     }
 
     .reuven-pair {
@@ -662,9 +611,8 @@ button:focus-visible {
 
     .reuven-img {
         width: 100%;
-        height: 80vw; /* גובה יחסי לרוחב המסך, מותאם למובייל */
+        height: 80vw;
         border-radius: 3vw;
-
     }
 
     /*////////////////////////////////////////////////////////////////////////////////////////////////////////*/
@@ -689,7 +637,6 @@ button:focus-visible {
     #women-gallery-text {
         font: bold 25px Arial;
         margin-top: 5%;
-
     }
 
     .fourScreen {
@@ -716,7 +663,6 @@ button:focus-visible {
         margin: 1vh 0;
         justify-content: center;
         text-align: center;
-
     }
 
     .logoim {
@@ -749,11 +695,6 @@ button:focus-visible {
         margin: 0 auto;
         display: block;
         border: none;
-
     }
 
-
 }
-
-
-
