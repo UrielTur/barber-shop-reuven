@@ -2,6 +2,13 @@
     text-align: center;
 }
 
+body {
+    font-family: "Heebo", "Varela Round", "Assistant", "Arial", sans-serif;
+    direction: rtl;
+    text-align: right;
+}
+
+
 .App-logo {
     height: 40vmin;
     pointer-events: none;

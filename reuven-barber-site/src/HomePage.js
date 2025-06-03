@@ -155,7 +155,7 @@ class HomePage extends React.Component {
                 </div>
 
                 <div className="bg1">
-                    <video className={"video-bg"} autoPlay muted loop playsInline id={"background-video"}>
+                    <video className={"video-bg"} autoPlay muted loop playsInline webkit-playsinline preload="auto" id={"background-video"}>
                         <source src={reuvenBg} type={"video/mp4"}/>
                     </video>
 
@@ -190,13 +190,13 @@ class HomePage extends React.Component {
                 </div>
 
                 <div className={"menScreen"} ref={this.menScreenRef}>
-                    <h1 id={"men-gallery-text"}>גלריה - תספורות גברים</h1>
+                    <h1 id={"men-gallery-text"}>גלריה&nbsp;–&nbsp;תספורות גברים</h1>
                     <p> דירוגים, עיצוב זקן</p>
                     <div><MenGallery> </MenGallery></div>
                 </div>
 
                 <div className={"womenScreen"} ref={this.womenScreenRef}>
-                    <h1 id={"women-gallery-text"}>גלריה - תספורות נשים</h1>
+                    <h1 id={"women-gallery-text"}>גלריה&nbsp;–&nbsp;תספורות נשים</h1>
                     <p> החלקות, צבע, גוונים</p>
                     <div><WomenGallery> </WomenGallery></div>
                 </div>

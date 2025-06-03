@@ -1,3 +1,8 @@
+body {
+    font-family: "Varela Round", "Assistant", "Heebo", "Arial", sans-serif;
+}
+
+
 html {
     overflow-x: hidden;
 }
@@ -212,6 +217,7 @@ button:focus-visible {
     height: 100vh;
     object-fit: cover;
     z-index: -1;
+    pointer-events: none;
 }
 
 /*////////////////////////////////////////////////////////////////////////////////////////////////////////*/
