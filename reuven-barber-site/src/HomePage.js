@@ -147,11 +147,9 @@ class HomePage extends React.Component {
                        rel={"noopener noreferrer"}>
                     </a>
 
-                    <a href="https://wa.me/972547235955?text=היי%20ראובן%20אני%20רוצה%20לקבוע%20תור"
-                       className={"whatsapp"}
-                       target={"_blank"}
-                       rel={"noopener noreferrer"}>
-                    </a>
+                    <div className={"whatsapp"} onClick={() =>
+                        window.open("https://wa.me/972547235955?text=היי%20ראובן%20אני%20רוצה%20לקבוע%20תור", "_blank")
+                    }></div>
                 </div>
 
                 <div className="bg1">
@@ -161,11 +159,11 @@ class HomePage extends React.Component {
 
                     <image className={"big-logo"}/>
 
-                    <a href="https://wa.me/972547235955?text=היי%20ראובן%20אני%20רוצה%20לקבוע%20תור" id={"firstButton"}
-                       target={"_blank"}
-                       rel={"noopener noreferrer"}>
+                    <button id={"firstButton"} onClick={() => {
+                        window.open("https://wa.me/972547235955?text=היי%20ראובן%20אני%20רוצה%20לקבוע%20תור", "_blank");
+                    }}>
                         <h1>לקביעת תור</h1>
-                    </a>
+                    </button>
                 </div>
 
                 <div className={"secondScreen"} ref={this.secondScreenRef}>
@@ -215,9 +213,9 @@ class HomePage extends React.Component {
                     <div className={"logoim"}>
                         <a href="https://www.instagram.com/reuvenisraelov/"
                            id={"instagram-2"} target={"_blank"} rel={"noopener noreferrer"}></a>
-                        <a href="https://wa.me/972547235955?text=היי%20ראובן%20אני%20רוצה%20לקבוע%20תור"
-                           id={"whatsapp-2"} target={"_blank"}
-                           rel={"noopener noreferrer"}></a>
+                        <div id={"whatsapp-2"} onClick={() =>
+                            window.open("https://wa.me/972547235955?text=היי%20ראובן%20אני%20רוצה%20לקבוע%20תור", "_blank")
+                        }></div>
                     </div>
                     <div className={"map-container"}>
                         <iframe

@@ -167,11 +167,9 @@ class HairProducts extends React.Component {
                        target={"_blank"}
                        rel={"noopener noreferrer"}>
                     </a>
-                    <a href="https://wa.me/972547235955?text=היי%20ראובן%20אני%20רוצה%20לקבוע%20תור"
-                       className={"whatsapp"}
-                       target={"_blank"}
-                       rel={"noopener noreferrer"}>
-                    </a>
+                    <div className={"whatsapp"} onClick={() =>
+                        window.open("https://wa.me/972547235955?text=היי%20ראובן%20אני%20רוצה%20לקבוע%20תור", "_blank")
+                    }></div>
                 </div>
 
                 <div className={"products-list"} style={{paddingTop: '140px', marginLeft: '20px'}}>
@@ -202,9 +200,9 @@ class HairProducts extends React.Component {
                     <div className={"logoim"}>
                         <a href="https://www.instagram.com/reuvenisraelov/"
                            id={"instagram-2"} target={"_blank"} rel={"noopener noreferrer"}></a>
-                        <a href="https://wa.me/972547235955?text=היי%20ראובן%20אני%20רוצה%20לקבוע%20תור"
-                           id={"whatsapp-2"} target={"_blank"}
-                           rel={"noopener noreferrer"}></a>
+                        <div id={"whatsapp-2"} onClick={() =>
+                            window.open("https://wa.me/972547235955?text=היי%20ראובן%20אני%20רוצה%20לקבוע%20תור", "_blank")
+                        }></div>
                     </div>
                     <div className={"map-container"}>
                         <iframe
